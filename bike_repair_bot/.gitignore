@@ -1,0 +1,28 @@
+# Rust Build Artifacts
+/target
+Cargo.lock
+
+# Environment Variables
+.env
+
+# Vector Database Storage
+qdrant_storage/
+*.qdrant
+
+# PDF Files
+uploads/
+*.pdf
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

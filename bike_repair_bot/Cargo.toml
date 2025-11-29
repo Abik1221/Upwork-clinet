@@ -1,0 +1,50 @@
+[package]
+name = "bike_repair_bot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Async Runtime
+tokio = { version = "1.35", features = ["full"] }
+
+# Web Server
+warp = "0.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# OpenAI Integration
+async-openai = "0.20"
+
+# Vector Database (Embedded)
+qdrant-client = { version = "1.8", features = ["serde"] }
+
+# PDF Processing
+pdf-extract = "0.7"
+lopdf = "0.32"
+
+# Text Processing & Embeddings
+tiktoken-rs = "0.5"
+
+# Security & Rate Limiting
+governor = "0.6"
+dashmap = "5.5"
+uuid = { version = "1.6", features = ["v4", "serde"] }
+
+# Configuration & Environment
+dotenv = "0.15"
+
+# Date/Time
+chrono = { version = "0.4", features = ["serde"] }
+
+# Logging
+log = "0.4"
+env_logger = "0.11"
+
+# Error Handling
+anyhow = "1.0"
+thiserror = "1.0"
+
+# HTTP Client (for testing)
+[dev-dependencies]
+reqwest = "0.11"
+
